@@ -23,7 +23,7 @@ error "Dockerfile not found in the workspace. please create one for your python 
 }
 }
 }
-stages('Docker Run (Optional)') {
+stage('Docker Run (Optional)') {
 steps {
 sh "docker run --rm ${env.Docker_image}"
 }
